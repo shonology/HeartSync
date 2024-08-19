@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HeartBeat Match</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>HeartSync</h1>
+        </header>
+        <main>
+            <form id="matchForm">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="sex">Your Sex:</label>
+                <select id="sex" name="sex" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="interest">Your Interests:</label>
+                <input type="text" id="interest" name="interest" placeholder="e.g., Reading, Traveling" required>
+
+                <label for="occupation">Your Occupation:</label>
+                <input type="text" id="occupation" name="occupation" placeholder="e.g., Engineer, Artist" required>
+
+                <label for="partnerName">Partner's Name:</label>
+                <input type="text" id="partnerName" name="partnerName" required>
+
+                <label for="partnerSex">Partner's Sex:</label>
+                <select id="partnerSex" name="partnerSex" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="partnerInterest">Partner's Interests:</label>
+                <input type="text" id="partnerInterest" name="partnerInterest" placeholder="e.g., Music, Sports" required>
+
+                <label for="partnerOccupation">Partner's Occupation:</label>
+                <input type="text" id="partnerOccupation" name="partnerOccupation" placeholder="e.g., Teacher, Designer" required>
+
+                <button type="submit">Find Your Match</button>
+            </form>
+            <div id="result"></div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
